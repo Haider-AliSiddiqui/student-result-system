@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Information Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Student Information</h2>
+            <p>Please enter your details</p>
+        </div>
+        
+        <form onsubmit="datasubmit(); return false;">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Enter your full name" required autofocus>
+            </div>
+            
+            <div class="form-group">
+                <label for="matricmarks">Matric Obtained Marks</label>
+                <input type="number" id="matricmarks" placeholder="Enter your marks" min="0" max="1100" required>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Information</button>
+        </form>
+    </div>
+
+    <script src="./app.js"> </script>
+</body>
+</html>
